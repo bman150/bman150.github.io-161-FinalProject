@@ -1,0 +1,77 @@
+:root {
+    --theme-color: #f4eaf3;
+    --theme-dark-color: #a35ca2;
+    --primary-font-color: #5a5a5a;
+    --link-font-color: #e8eff0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--theme-color);
+    color: var(--primary-font-color);
+    width: 95%;
+    margin: 10px auto;
+}
+
+header {
+    background-color: var(--theme-dark-color);
+    color: var(--link-font-color);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--theme-dark-color);
+    color: var(--link-font-color);
+    text-align: center;
+}
+
+main {
+    margin: 0;
+}
+
+main > section {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#fineprint {
+    font-weight: bold;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.meat-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.combine-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width:800px) {
+    .ingredients-container img {
+        width: 40vw;
+    }
+    .ingredients-container {
+        flex-direction: row;
+        text-align: left;
+    }
+    .ingredients-container > div {
+        margin: 20px;
+    }
+    .meat-container img{
+        width: 40vw;
+    }
+    .meat-container {
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    .combine-container img {
+        width: 40vw;
+    }
+}
